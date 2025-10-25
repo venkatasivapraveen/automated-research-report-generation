@@ -52,11 +52,19 @@ dependencies = [
     { name = "langgraph" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "automated-research-report-generation" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=7.0.1" },
     { name = "langgraph", specifier = ">=0.6.10" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "automated-research-report-generation", virtual = "." }]
 
 [[package]]
 name = "certifi"
